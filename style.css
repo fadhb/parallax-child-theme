@@ -1,8 +1,9 @@
 /*
 Theme Name: Parallax Child
 Description: Child theme for Parallax theme
-Author: AirSkull updated 25th March
-Version: 3.8.9
+Author: AirSkull updated 10th April 2014
+Version: 3.8.24
+
 Template: parallax
 */
 
@@ -24,6 +25,8 @@ Template: parallax
     bottom: auto;
 }
 
+
+
 .single .sidebar-none #layout {
 	max-width:850px;
 }
@@ -44,6 +47,12 @@ margin-left: 9%;
 margin-right: 9%;
 }
 
+
+/* Set the max height for homeschool curriculum section */
+.section-post.post-6513 {
+  min-height:475px;
+  max-height:475px;
+}
 /* homepage centre the meta */
 
 .post-title {text-align: center;}
@@ -57,9 +66,26 @@ margin-right: 9%;
 
 
 /* style the share this icons to the right */
-.sd-content  {
-	text-align: right;
+
+/* style the sharing icons */
+div.sharedaddy .sd-content {
+    width:  100% !important;
 }
+
+h3.sd-title {
+    width: 0% !important;
+}
+
+.sd-content {
+    text-align: center;
+}
+
+div.sharedaddy a.sd-button {
+    background: #fff !important;
+    border:none !important;
+}
+
+
 div.sharedaddy .sd-content ul {
 	display:inline-block;
 }
@@ -70,7 +96,7 @@ div.sharedaddy a.sd-button {
  
 div.sharedaddy .sd-content li a::before {
     font-family: 'Genericons';
-    font-size: 16px;
+    font-size: 40px;
     color: #fff;
 }
  
@@ -100,6 +126,17 @@ div.sharedaddy .sd-content li.share-email a::before {
 
 }
 
+/* nrelate add 10px to left margin */
+.nrelate .nr_inner {
+margin-left: 25px !important;
+}
+
+
+/*
+#search-2 .widget .widget_search {
+	text-align: center;
+}
+*/
 /* align the image titles centered */
 .image-title {text-align: center;} 
 #searchform {text-align: center;}
@@ -167,6 +204,9 @@ div.sharedaddy .sd-content li.share-email a::before {
         padding: 75px 0 60px;
 }
 
+/* menu spacing */
+#main-nav li:last { border-left: 65px }
+
 /* comments and stuff*/
 #comments {
 	margin-left: 9%;
@@ -206,7 +246,7 @@ div.sharedaddy .sd-content li.share-email a::before {
 
 /* post nav arrow */
 /*
-.post-nav span span {
+ .post-nav span span {
 	background: url(images/arrow-left-blue.png) center no-repeat;
 	color: #fff;
 	font: normal 20px/100% "Times New Roman", Times, serif;
@@ -268,5 +308,3 @@ SEARCH FORM
 .themify_builder .text-6749-0-1-0.module-text {
         background-color: rgba(255,255,255,0.7) !important;
 }
-
-
