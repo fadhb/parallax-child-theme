@@ -1,14 +1,14 @@
 /*
 Theme Name: Parallax Child
 Description: Child theme for Parallax theme
-Author: AirSkull updated 10th April 2014
-Version: 3.8.24
-
+Author: AirSkull updated 11th April 2014
+Version: 3.8.34
 Template: parallax
 */
 
 @import url("../parallax/style.css");
 @import url("./genericons.css");
+@import url("./custom-sharing-jp.css");
 
 /* write custom css below */
 
@@ -24,8 +24,6 @@ Template: parallax
     top: 0;
     bottom: auto;
 }
-
-
 
 .single .sidebar-none #layout {
 	max-width:850px;
@@ -65,8 +63,6 @@ margin-right: 9%;
 }
 
 
-/* style the share this icons to the right */
-
 /* style the sharing icons */
 div.sharedaddy .sd-content {
     width:  100% !important;
@@ -82,9 +78,11 @@ h3.sd-title {
 
 div.sharedaddy a.sd-button {
     background: #fff !important;
-    border:none !important;
 }
 
+div.sharedaddy a.share-twitter {
+    border:none !important;
+}
 
 div.sharedaddy .sd-content ul {
 	display:inline-block;
@@ -103,6 +101,7 @@ div.sharedaddy .sd-content li a::before {
 div.sharedaddy a.sd-button>span {
     display: none;
 }
+
 div.sharedaddy .sd-content li.share-pinterest a::before {
     content: '\f210';
     color: #FF0000;
@@ -126,17 +125,23 @@ div.sharedaddy .sd-content li.share-email a::before {
 
 }
 
-/* nrelate add 10px to left margin */
+/* nrelate add 25px to left margin */
 .nrelate .nr_inner {
 margin-left: 25px !important;
 }
-
-
-/*
-#search-2 .widget .widget_search {
-	text-align: center;
+.nrelate .nr_title {
+margin-left: 25px !important;
 }
-*/
+
+/* jetpack subcribtion email form */
+p#subscribe-email {
+    width:30%;
+}
+
+.widget.jetpack_subscription_widget {
+    margin-left: 25px ;
+}
+
 /* align the image titles centered */
 .image-title {text-align: center;} 
 #searchform {text-align: center;}
@@ -223,16 +228,6 @@ margin-left: 25px !important;
 }
 
 	
-/*	background-image: url(http://localhost:8888/arscoil/wp-content/uploads/2014/03/divider2.png);
-	/*background-color: #abc;*/
-	height: 100px;
-	/*max-width: 800px;*/
-	margin-left 9%;
-	background-repeat:no-repeat;
-	background-position:center;
-} 
-*/
-
 .back-top a {
     background: url(images/arrow-up.png) no-repeat center center;
     display: block;
@@ -243,30 +238,6 @@ margin-left: 25px !important;
 
  table.center {margin:auto;}
 
-
-/* post nav arrow */
-/*
- .post-nav span span {
-	background: url(images/arrow-left-blue.png) center no-repeat;
-	color: #fff;
-	font: normal 20px/100% "Times New Roman", Times, serif;
-	display: block;
-	float: left;
-	width: 32px;
-	height: 28px;
-	padding: 4px 0 0;
-	text-align: center;
-	margin: -3px 10px 17px 0;
-	text-indent: -999em;
-	border-radius: 10em;
-}
-.post-nav .next span {
-	background-image: url(images/arrow-right-blue.png);
-	float: right;
-	margin-left: 10px;
-	margin-right: 0;
-}
-*/
 
 /* 
 SEARCH FORM
