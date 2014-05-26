@@ -1,8 +1,8 @@
 /*
 Theme Name: Parallax Child
 Description: Child theme for Parallax theme
-Author: AirSkull updated 11th April 2014
-Version: 3.8.34
+Author: AirSkull updated 17th April 2014
+Version: 3.8.63
 Template: parallax
 */
 
@@ -64,6 +64,14 @@ margin-right: 9%;
 
 
 /* style the sharing icons */
+
+div.asmeta-sharing-title {
+    text-align: center;
+    font-size: larger;   
+    color: #555;
+    border-bottom: 1px solid #555;
+}
+
 div.sharedaddy .sd-content {
     width:  100% !important;
 }
@@ -74,6 +82,7 @@ h3.sd-title {
 
 .sd-content {
     text-align: center;
+    margin-bottom: 45px;
 }
 
 div.sharedaddy a.sd-button {
@@ -125,21 +134,130 @@ div.sharedaddy .sd-content li.share-email a::before {
 
 }
 
-/* nrelate add 25px to left margin */
+/* nrelate box border & add 25px to left margin */
 .nrelate .nr_inner {
-margin-left: 25px !important;
+    margin-left: 25px !important;
 }
 .nrelate .nr_title {
-margin-left: 25px !important;
+    margin-left: 25px !important;
+}
+
+div.nr_related_placeholder {
+    border: 1px solid #555;
+    border-radius: 10px;
+    padding-top: 30px;
+    padding-bottom: 30px;
 }
 
 /* jetpack subcribtion email form */
 p#subscribe-email {
     width:30%;
+    padding-left: 35%;
 }
 
+#subscribe-field {
+    text-align: center;
+}
 .widget.jetpack_subscription_widget {
     margin-left: 25px ;
+}
+
+.widgettitle {
+    display:none;
+}
+
+div.widget.jetpack_subscription_widget {
+    border: 1px solid #555;
+    padding: 15px 0px;
+    margin-top: 35px;
+    border-radius: 10px;
+    text-align: center;
+    margin-left: 0px;    
+    width:100%;
+    background: #efefef;
+}
+
+/* remove sharing for team pages */
+div.post-nav.team-nav.clearfix .next a {
+    background: #fff;
+}
+
+div.post-nav.team-nav.clearfix .prev a {
+    background: #fff;
+}
+    /* team id 6510 */
+.post-6510 div.asmeta-sharing-title {
+display: none;
+}
+
+.post-6510 div.nr_related_placeholder {
+display: none;
+}
+
+.post-6510 div.widget.jetpack_subscription_widget {
+display: none;
+}
+
+
+    /* team id 6507 */
+.post-6507 div.asmeta-sharing-title {
+display: none;
+}
+
+.post-6507 div.nr_related_placeholder {
+display: none;
+}
+
+.post-6507 div.widget.jetpack_subscription_widget {
+display: none;
+}
+
+
+    /* team id 6506 */
+.post-6506 div.asmeta-sharing-title {
+display: none;
+}
+
+.post-6506 div.nr_related_placeholder {
+display: none;
+}
+
+.post-6506 div.widget.jetpack_subscription_widget {
+display: none;
+}
+
+    
+    /* team id 6505 */
+.post-6505 div.asmeta-sharing-title {
+display: none;
+}
+
+.post-6505 div.nr_related_placeholder {
+display: none;
+}
+
+.post-6505 div.widget.jetpack_subscription_widget {
+display: none;
+}
+
+
+
+/* comments */
+.page-id-6953 div#comments, .page-id-6963 div#comments, .page-id-6953 p#subscribe-text {
+    display: none;
+}
+
+.page-id-6953  .page-content {
+    border: 1px solid #555;
+    border-radius: 10px;
+    background: #efefef;
+    text-align: center;
+    padding: 50px;
+}
+
+.page-id-6953 div.widget.jetpack_subscription_widget {
+    border: none;
+    padding: 0px;
 }
 
 /* align the image titles centered */
@@ -212,6 +330,24 @@ p#subscribe-email {
 /* menu spacing */
 #main-nav li:last { border-left: 65px }
 
+/* post navigation images */
+span.arrow {
+    display: none !important;
+}
+
+.next a {
+    color: rgba(255,255,255,0);
+    height: 35px;
+    background: url(images/nxt.png) right no-repeat;
+}
+
+.prev a {
+    color: rgba(255,255,255,0);
+    height: 35px;
+    background: url(images/last.png) left no-repeat;
+}
+
+
 /* comments and stuff*/
 #comments {
 	margin-left: 9%;
@@ -278,4 +414,7 @@ SEARCH FORM
 }
 .themify_builder .text-6749-0-1-0.module-text {
         background-color: rgba(255,255,255,0.7) !important;
+}
+div#image-6693-0-0-0 {
+text-align: center;
 }

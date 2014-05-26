@@ -1,3 +1,4 @@
-Styling for Child Theme of Parallax by Themify
+##Styling for Child Theme (wordpress)
+###Parent theme: Parallax by Themify
 ==
-Style.css & functions.php that I use in a personal blog
+Style.css & functions.php that I use in a personal wordpress blog
