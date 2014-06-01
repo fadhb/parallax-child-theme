@@ -327,6 +327,11 @@ display: none;
         padding: 75px 0 60px;
 }
 
+/* Australia Page */
+.page-id-6518 i.fa.fa-arrow-circle-down {
+        display: none;
+}
+
 /* menu spacing */
 #main-nav li:last { border-left: 65px }
 
