@@ -75,12 +75,6 @@ global $themify; ?>
 	<!-- /.post-content -->
 	
 
-			<?php
-			if (($wp_query->current_post + 1) < ($wp_query->post_count)) {
-   			echo '<div class=aspostdivider> </div>';
-			}
-			?>
-
 
 	<?php themify_post_end(); // hook ?>
 	
